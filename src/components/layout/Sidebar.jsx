@@ -1,5 +1,7 @@
 import React from 'react'
 import { Download } from 'lucide-react'
+import { Linkedin, Github, Twitter, Mail } from 'lucide-react'
+import profile from '../../assets/profileportfolio.png'
 
 const Sidebar = () => {
   const languages = [
@@ -25,10 +27,10 @@ const Sidebar = () => {
     <aside className="w-80 rounded-md h-[98vh] flex flex-col bg-neutral-900 border-r border-neutral-800 text-slate-100">
 
       {/* Profile (Sticky) */}
-      <div className="shrink-0 p-8 border-b border-neutral-800">
+      <div className="shrink-0 p-8 border-b border-yellow-600">
         <div className="flex flex-col items-center">
           <div className="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-amber-400 shadow-[0_0_20px_rgba(255,161,22,0.3)]">
-            <img src="" alt="" />
+            <img className='w-full h-full object-cover' src={profile} alt="" />
           </div>
           <h1 className="text-xl font-semibold mb-2">Ayush Bharne</h1>
           <p className="text-sm font-medium text-amber-400">
@@ -192,7 +194,27 @@ const Sidebar = () => {
           </button>
 
         </div>
+        
       </div>
+      <div className='sticky bottom-0 w-full z-5 h-14 py-2 border-t-2 border-yellow-600 '>
+{/* Social Links */}
+            <div className="flex gap-4 w-full justify-center bg-[#1a1a1a] ">
+              {[
+                { icon: Linkedin, link: '#', color: '#0077b5' },
+                { icon: Github, link: '#', color: '#fff' },
+                { icon: Twitter, link: '#', color: '#1da1f2' },
+                { icon: Mail, link: 'ayushbharne@example.com', color: '#ffa116' }
+              ].map((social, i) => (
+                <a 
+                  key={i} 
+                  href={social.link} 
+                  className="w-10 h-10 bg-[#1a1a1a] border border-[#2d2d2d] rounded-xl flex items-center justify-center hover:border-[#ffa116] transition-all group"
+                >
+                  <social.icon size={24} className="text-[#b3b3b3] group-hover:text-white transition-colors" />
+                </a>
+              ))}
+            </div>
+        </div>
     </aside>
   )
 }

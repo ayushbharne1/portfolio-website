@@ -6,11 +6,11 @@ const Navbar = () => {
 
   const navItems = [
     { name: 'Home', icon: Home, href: '/' },
-    { name: 'About', icon: User, href: '#about' },
-    { name: 'Skills', icon: Code, href: '#skills' },
+    { name: 'About', icon: User, href: '/about' },
+    { name: 'Skills', icon: Code, href: '/skills' },
     { name: 'Projects', icon: Briefcase, href: '/projects' },
-    { name: 'Experience', icon: Award, href: '#experience' },
-    { name: 'Contact', icon: Mail, href: '/contact' }
+    { name: 'Experience', icon: Award, href: '/experience' },
+    { name: 'Contact', icon: Mail, href: '/contact' },
   ];
 
   return (
@@ -49,7 +49,7 @@ const Navbar = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <a
-              href="#contact"
+              href="/hireme"
               className="bg-[#ffa116] hover:bg-[#ffb800] text-[#0a0a0a] px-6 py-2 rounded-lg font-semibold text-sm transition-all transform hover:scale-105 hover:shadow-lg hover:shadow-[#ffa116]/30"
             >
               Hire Me
@@ -87,7 +87,7 @@ const Navbar = () => {
               );
             })}
             <a
-              href="#contact"
+              href="/hireme"
               onClick={() => setIsOpen(false)}
               className="bg-[#ffa116] hover:bg-[#ffb800] text-[#0a0a0a] block px-4 py-3 rounded-lg font-semibold text-base text-center mt-4 transition-all"
             >
