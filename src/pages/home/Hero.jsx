@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
+import imgAvatar from "../../assets/avatar.png";
 
 const Hero = () => {
   const stats = [
-    { value: "10+", label: "Completed Projects" },
-    { value: "8+", label: "Freelance Clients" },
+    { value: "5+", label: "Completed Projects" },
+    { value: "3+", label: "Freelance Clients" },
     { value: "5+", label: "Honors & Awards" },
-    { value: "10+", label: "Opensource Projects" },
+    { value: "1+", label: "Opensource Projects" },
   ];
 
   const roles = [
@@ -83,8 +84,8 @@ const Hero = () => {
               <div className="absolute inset-0 rounded-full blur-2xl opacity-20 bg-[#ffa116]"></div>
               
               {/* Avatar Circle */}
-              <div className="relative w-48 h-48 lg:w-64 lg:h-64 rounded-full flex items-center justify-center text-6xl lg:text-8xl bg-linear-to-br from-[#2d2d2d] to-[#1a1a1a] border border-[#2d2d2d]">
-                👋
+              <div className="relative shadow-amber-500 shadow-md overflow-hidden w-48 h-48 lg:w-64 lg:h-64 rounded-full flex items-center justify-center text-6xl lg:text-8xl bg-linear-to-br from-[#2d2d2d] to-[#1a1a1a] border border-[#2d2d2d]">
+                <img src={imgAvatar} alt="" />
               </div>
             </div>
           </div>

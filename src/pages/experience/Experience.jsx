@@ -110,7 +110,7 @@ const Experience = () => {
             })}
 
             {/* Resume Download CTA */}
-            <div className="bg-gradient-to-br from-[#ffa116] to-[#ffb800] p-6 rounded-2xl text-[#0a0a0a]">
+            <div className="bg-linear-to-br from-[#ffa116] to-[#ffb800] p-6 rounded-2xl text-[#0a0a0a]">
               <h4 className="font-bold text-xl mb-2">Need a PDF?</h4>
               <p className="text-sm mb-4 font-medium opacity-90">Download my full resume for offline viewing.</p>
               <button className="w-full bg-[#0a0a0a] text-white py-3 rounded-xl font-bold hover:bg-black transition-colors flex items-center justify-center gap-2">
@@ -126,17 +126,17 @@ const Experience = () => {
                 <div key={index} className="group relative">
                   {/* Vertical Line Connector */}
                   {index !== experiences.length - 1 && (
-                    <div className="absolute left-6 top-16 bottom-[-32px] w-[2px] bg-[#2d2d2d] group-hover:bg-[#ffa116]/30 transition-colors"></div>
+                    <div className="absolute left-6 top-16 -bottom-8 w-0.5 bg-[#2d2d2d] group-hover:bg-[#ffa116]/30 transition-colors"></div>
                   )}
 
                   <div className="flex gap-6">
                     {/* Icon Circle */}
-                    <div className="relative z-10 flex-shrink-0 w-12 h-12 bg-[#1a1a1a] border-2 border-[#2d2d2d] rounded-full flex items-center justify-center group-hover:border-[#ffa116] transition-colors">
+                    <div className="relative z-10 shrink-0 w-12 h-12 bg-[#1a1a1a] border-2 border-[#2d2d2d] rounded-full flex items-center justify-center group-hover:border-[#ffa116] transition-colors">
                       <Briefcase size={20} className="text-[#ffa116]" />
                     </div>
 
                     {/* Content Card */}
-                    <div className="bg-[#1a1a1a] border border-[#2d2d2d] p-6 rounded-2xl flex-grow group-hover:border-[#ffa116]/50 transition-all">
+                    <div className="bg-[#1a1a1a] border border-[#2d2d2d] p-6 rounded-2xl grow group-hover:border-[#ffa116]/50 transition-all">
                       <div className="flex flex-wrap justify-between items-start gap-4 mb-4">
                         <div>
                           <h3 className="text-xl font-bold text-white group-hover:text-[#ffa116] transition-colors">{exp.role}</h3>
@@ -157,7 +157,7 @@ const Experience = () => {
                       <div className="grid sm:grid-cols-1 gap-3">
                         {exp.highlights.map((highlight, hIdx) => (
                           <div key={hIdx} className="flex items-start gap-3 text-sm text-[#eff1f6]">
-                            <CheckCircle2 size={16} className="text-[#ffa116] mt-0.5 flex-shrink-0" />
+                            <CheckCircle2 size={16} className="text-[#ffa116] mt-0.5 shrink-0" />
                             <span>{highlight}</span>
                           </div>
                         ))}

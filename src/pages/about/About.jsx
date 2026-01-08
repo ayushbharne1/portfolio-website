@@ -5,20 +5,20 @@ const About = () => {
   const personalInfo = [
     { icon: Calendar, label: 'Age', value: '23 Years' },
     { icon: MapPin, label: 'Location', value: 'Balaghat, India' },
-    { icon: Briefcase, label: 'Experience', value: '5+ Years' },
+    { icon: Briefcase, label: 'Experience', value: 'Fresher' },
     { icon: GraduationCap, label: 'Education', value: 'B.Tech in CSE' }
   ];
 
   const achievements = [
-    { icon: Award, title: '50+ Projects', description: 'Successfully delivered' },
-    { icon: Briefcase, title: '30+ Clients', description: 'Satisfied worldwide' },
-    { icon: GraduationCap, title: '15+ Certifications', description: 'Professional credentials' },
+    { icon: Award, title: '5+ Projects', description: 'Successfully delivered' },
+    { icon: Briefcase, title: '3+ Clients', description: 'Satisfied worldwide' },
+    { icon: GraduationCap, title: '5+ Certifications', description: 'Professional credentials' },
     { icon: Coffee, title: '1000+ Cups', description: 'Of coffee consumed' }
   ];
 
   const interests = [
     { icon: Music, name: 'Music', color: '#ff6b9d' },
-    { icon: Camera, name: 'Photography', color: '#ffa116' },
+    // { icon: Camera, name: 'Photography', color: '#ffa116' },
     { icon: Book, name: 'Reading', color: '#00d9ff' },
     { icon: Coffee, name: 'Coffee', color: '#34a853' },
     { icon: Heart, name: 'Traveling', color: '#f14e32' }
@@ -26,28 +26,34 @@ const About = () => {
 
   const timeline = [
     {
+      year: 'Sep 2025 - Current',
+      title: 'React.js Intern',
+      company: 'Talentrise Technokrate Pvt. Ltd.',
+      description: 'Working on a React.js project for a client.'
+    },
+    {
+      year: '2021 - 2025',
+      title: 'B.Tech Graduation',
+      company: 'Samrat Ashok Technological Institute Vidisha (MP)',
+      description: 'Graduated with a B.Tech degree in Computer Science and Engineering with 7.9 CGPA.'
+    },
+    {
       year: '2024',
-      title: 'Senior Full Stack Developer',
-      company: 'Tech Solutions Inc.',
-      description: 'Leading a team of 5 developers, architecting scalable solutions, and mentoring junior developers.'
+      title: 'Backend Training',
+      company: 'Sheryians Coding School',
+      description: 'Developed RESTful APIs and databases using Node.js, Express.js, and MongoDB.'
     },
     {
-      year: '2022',
-      title: 'Full Stack Developer',
-      company: 'Digital Innovations',
-      description: 'Developed multiple web applications using MERN stack, improved performance by 40%.'
-    },
-    {
-      year: '2020',
-      title: 'Frontend Developer',
-      company: 'Creative Agency',
+      year: '2023',
+      title: 'Frontend Training',
+      company: 'Sheryians Coding School',
       description: 'Built responsive websites and web applications using React.js and modern CSS frameworks.'
     },
     {
       year: '2019',
-      title: 'Bachelor of Technology',
-      company: 'University Name',
-      description: 'Graduated with honors in Computer Science and Engineering with a focus on web technologies.'
+      title: '10th',
+      company: 'Vivek Jyoti Higher Secondary School',
+      description: 'Completed my 10th with 92.8% in Science stream.'
     }
   ];
 
@@ -208,18 +214,18 @@ const About = () => {
             I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a
-              href="#contact"
+            <button
+              onClick={() => window.location.href = "/contact"}
               className="bg-[#ffa116] hover:bg-[#ffb800] text-[#0a0a0a] px-8 py-3 rounded-xl font-semibold transition-all transform hover:scale-105 hover:shadow-xl hover:shadow-[#ffa116]/30"
             >
               Get In Touch
-            </a>
-            <a
-              href="#projects"
+            </button>
+            <button
+              onClick={() => window.location.href = "/projects"}
               className="bg-[#2d2d2d] hover:bg-[#3d3d3d] text-white px-8 py-3 rounded-xl font-semibold transition-all"
             >
               View Projects
-            </a>
+            </button>
           </div>
         </div>
       </div>

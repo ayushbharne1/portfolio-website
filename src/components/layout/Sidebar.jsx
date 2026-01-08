@@ -200,10 +200,10 @@ const Sidebar = () => {
 {/* Social Links */}
             <div className="flex gap-4 w-full justify-center bg-[#1a1a1a] ">
               {[
-                { icon: Linkedin, link: '#', color: '#0077b5' },
-                { icon: Github, link: '#', color: '#fff' },
-                { icon: Twitter, link: '#', color: '#1da1f2' },
-                { icon: Mail, link: 'ayushbharne@example.com', color: '#ffa116' }
+                { icon: Linkedin, link: 'https://www.linkedin.com/in/ayush-bharne-4462b9247/', color: '#0077b5' },
+                { icon: Github, link: 'https://github.com/ayushbharne1', color: '#fff' },
+                // { icon: Twitter, link: '#', color: '#1da1f2' },
+                { icon: Mail, link: 'mailto:ayushbharne@gmail.com', color: '#ffa116' }
               ].map((social, i) => (
                 <a 
                   key={i} 

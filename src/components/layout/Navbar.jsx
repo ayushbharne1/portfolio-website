@@ -1,17 +1,32 @@
-import React, { useState } from 'react';
-import { Menu, X, Home, User, Briefcase, Mail, Code, Award } from 'lucide-react';
+import React, { useState } from "react";
+import {
+  Menu,
+  X,
+  Home,
+  User,
+  Briefcase,
+  Mail,
+  Code,
+  Award,
+} from "lucide-react";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const navItems = [
-    { name: 'Home', icon: Home, href: '/' },
-    { name: 'About', icon: User, href: '/about' },
-    { name: 'Skills', icon: Code, href: '/skills' },
-    { name: 'Projects', icon: Briefcase, href: '/projects' },
-    { name: 'Experience', icon: Award, href: '/experience' },
-    { name: 'Contact', icon: Mail, href: '/contact' },
+    { name: "Home", icon: Home, href: "/" },
+    { name: "About", icon: User, href: "/about" },
+    { name: "Skills", icon: Code, href: "/skills" },
+    { name: "Projects", icon: Briefcase, href: "/projects" },
+    { name: "Experience", icon: Award, href: "/experience" },
+    { name: "Contact", icon: Mail, href: "/contact" },
   ];
+  const handleClick = (path) => {
+    navigate(path);
+  };
 
   return (
     <nav className="bg-[#1a1a1a] ml-2 rounded-md border-b border-[#2d2d2d] sticky top-0 z-50 backdrop-blur-sm bg-opacity-95">
@@ -23,7 +38,9 @@ const Navbar = () => {
               <div className="w-10 h-10 bg-linear-to-br from-[#ffa116] to-[#ffb800] rounded-lg flex items-center justify-center transform group-hover:scale-110 transition-transform">
                 <span className="text-[#0a0a0a] font-bold text-xl">AB</span>
               </div>
-              <span className="text-white font-bold text-xl hidden sm:block">Ayush Bharne</span>
+              <span className="text-white font-bold text-xl hidden sm:block">
+                Ayush Bharne
+              </span>
             </a>
           </div>
 
@@ -32,13 +49,28 @@ const Navbar = () => {
             <div className="ml-10 flex items-center space-x-1">
               {navItems.map((item) => {
                 const Icon = item.icon;
+                const isActive = location.pathname === item.href;
+
                 return (
                   <button
                     key={item.name}
-                    onClick={() => window.location.href = item.href}
-                    className="text-[#b3b3b3] hover:text-white px-4 py-2 rounded-lg text-sm font-medium transition-all hover:bg-[#2d2d2d] flex items-center gap-2 group"
+                    onClick={() => handleClick(item.href)}
+                    className={`px-4 py-2 rounded-lg text-sm font-medium transition-all 
+      flex items-center gap-2 group
+      ${
+        isActive
+          ? "bg-neutral-800 border border-[#ffa116] text-[#ffa116]"
+          : "text-[#b3b3b3] hover:text-white hover:bg-[#2d2d2d]"
+      }`}
                   >
-                    <Icon size={16} className="group-hover:text-[#ffa116] transition-colors" />
+                    <Icon
+                      size={16}
+                      className={`${
+                        isActive
+                          ? "text-[#ffa116]"
+                          : "group-hover:text-[#ffa116]"
+                      }`}
+                    />
                     <span>{item.name}</span>
                   </button>
                 );
@@ -86,13 +118,13 @@ const Navbar = () => {
                 </a>
               );
             })}
-            <a
+            {/* <a
               href="/hireme"
               onClick={() => setIsOpen(false)}
               className="bg-[#ffa116] hover:bg-[#ffb800] text-[#0a0a0a] block px-4 py-3 rounded-lg font-semibold text-base text-center mt-4 transition-all"
             >
               Hire Me
-            </a>
+            </a> */}
           </div>
         </div>
       )}

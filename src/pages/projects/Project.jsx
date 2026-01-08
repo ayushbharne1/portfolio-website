@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ExternalLink, Github, Filter } from 'lucide-react';
-
+import RefokusThambnail from '../../assets/RefokusThambnail.png';
+import BeyondWhatUSee from '../../assets/BeyondWhatUSee.png';
 const Project = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
 
@@ -9,13 +10,13 @@ const Project = () => {
   const projects = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, product management, shopping cart, and payment integration.',
-      image: 'https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80',
+      title: 'Beyond-What-You-See',
+      description: 'A visually captivating web experience that leverages advanced scroll-triggered animations to create an immersive storytelling journey. GreenSock Animation Platform (GSAP) is utilized for smooth and intricate animations that respond to user scroll behavior, enhancing engagement and interactivity.',
+      image: BeyondWhatUSee,
       category: 'Web App',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Express', 'Stripe'],
-      github: 'https://github.com',
-      demo: 'https://demo.com'
+      technologies: ['HTML', 'CSS', 'JavaScript', 'GreenSock Animation', 'Scroll-trigger'],
+      github: 'https://github.com/ayushbharne1/Beyond-What-You-See',
+      demo: 'https://beyond-what-you-see.vercel.app'
     },
     {
       id: 2,
@@ -66,7 +67,18 @@ const Project = () => {
       technologies: ['React', 'Weather API', 'Chart.js', 'Geolocation'],
       github: 'https://github.com',
       demo: 'https://demo.com'
-    }
+    },
+    
+    {
+      id: 7,
+      title: 'Refokus',
+      description: 'Animated landing page built with React, Lenis for smooth scrolling, Tailwind CSS for styling, and Framer Motion for engaging animations.',
+      image: RefokusThambnail,
+      category: 'Web App',
+      technologies: ['React', "Lenis", 'tailwindcss', 'Framer Motion'],
+      github: 'https://github.com/ayushbharne1/Refokus',
+      demo: 'https://refokus-rho-flame.vercel.app'
+    },
   ];
 
   const filteredProjects = selectedCategory === 'All' 
