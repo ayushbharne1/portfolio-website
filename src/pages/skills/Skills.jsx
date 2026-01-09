@@ -24,9 +24,11 @@ const Skills = () => {
         { name: 'Node.js', level: 90 },
         { name: 'Express.js', level: 88 },
         { name: 'MongoDB', level: 85 },
-        { name: 'PostgreSQL', level: 82 },
+        { name: 'MySQL', level: 80 },
+        // { name: 'PostgreSQL', level: 82 },
         { name: 'REST API', level: 90 },
-        { name: 'GraphQL', level: 78 }
+
+        // { name: 'GraphQL', level: 78 }
       ]
     },
     {
@@ -35,9 +37,9 @@ const Skills = () => {
       color: '#ff6b9d',
       skills: [
         { name: 'Figma', level: 88 },
-        { name: 'Adobe XD', level: 82 },
-        { name: 'Photoshop', level: 80 },
-        { name: 'Illustrator', level: 75 },
+        // { name: 'Adobe XD', level: 82 },
+        // { name: 'Photoshop', level: 80 },
+        // { name: 'Illustrator', level: 75 },
         { name: 'Wireframing', level: 85 },
         { name: 'Prototyping', level: 87 }
       ]
@@ -50,7 +52,7 @@ const Skills = () => {
         { name: 'Git', level: 92 },
         { name: 'GitHub', level: 90 },
         { name: 'GitLab', level: 85 },
-        { name: 'Bitbucket', level: 80 },
+        // { name: 'Bitbucket', level: 50 },
         { name: 'Git Flow', level: 88 },
         { name: 'CI/CD', level: 82 }
       ]
@@ -60,9 +62,9 @@ const Skills = () => {
       title: 'Cloud & DevOps',
       color: '#4285f4',
       skills: [
-        { name: 'AWS', level: 80 },
+        // { name: 'AWS', level: 80 },
         { name: 'Docker', level: 85 },
-        { name: 'Kubernetes', level: 75 },
+        // { name: 'Kubernetes', level: 75 },
         { name: 'Vercel', level: 90 },
         { name: 'Netlify', level: 88 },
         { name: 'Linux', level: 82 }
@@ -74,9 +76,10 @@ const Skills = () => {
       color: '#34a853',
       skills: [
         { name: 'Redux', level: 87 },
-        { name: 'Jest', level: 80 },
+        { name: 'Gsap', level: 80 },
+        // { name: 'Jest', level: 80 },
         { name: 'Webpack', level: 78 },
-        { name: 'Firebase', level: 85 },
+        // { name: 'Firebase', level: 85 },
         { name: 'Socket.io', level: 82 },
         { name: 'WebRTC', level: 75 }
       ]
@@ -84,31 +87,31 @@ const Skills = () => {
   ];
 
   const languages = [
-    { name: 'English', level: 95 },
-    { name: 'Hindi', level: 100 }
+    { name: 'English', level: 80 },
+    { name: 'Hindi', level: 95 }
   ];
 
   const certifications = [
     {
-      title: 'AWS Certified Developer',
-      issuer: 'Amazon Web Services',
+      title: 'Java Algorithms and Data Structures',
+      issuer: 'Sheryians',
+      year: '2025'
+    },
+    {
+      title: 'React js',
+      issuer: 'Sheryians',
       year: '2024'
     },
     {
-      title: 'React Advanced Patterns',
-      issuer: 'Udemy',
-      year: '2023'
+      title: 'Backend Development',
+      issuer: 'Sheryians',
+      year: '2024'
     },
     {
-      title: 'Full Stack Web Development',
-      issuer: 'Coursera',
+      title: 'Frontend Development',
+      issuer: 'Sheryians',
       year: '2023'
     },
-    {
-      title: 'UI/UX Design Specialization',
-      issuer: 'Google',
-      year: '2022'
-    }
   ];
 
   return (
@@ -236,10 +239,10 @@ const Skills = () => {
         {/* Stats Section */}
         <div className="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            { value: '50+', label: 'Technologies' },
-            { value: '100+', label: 'Projects Completed' },
-            { value: '5+', label: 'Years Experience' },
-            { value: '15+', label: 'Certifications' }
+            { value: '2+', label: 'Technologies' },
+            { value: '5+', label: 'Projects Completed' },
+            { value: 'Fresher', label: 'Experience' },
+            { value: '5+', label: 'Certifications' }
           ].map((stat, index) => (
             <div
               key={index}
