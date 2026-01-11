@@ -137,6 +137,7 @@ const Skills = () => {
                 className="bg-[#1a1a1a] rounded-2xl p-6 border border-[#2d2d2d] hover:border-[#ffa116] transition-all group"
               >
                 {/* Category Header */}
+                
                 <div className="flex items-center gap-3 mb-6">
                   <div
                     className="w-12 h-12 rounded-lg flex items-center justify-center"
