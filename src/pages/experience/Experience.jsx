@@ -12,40 +12,40 @@ import {
 
 const Experience = () => {
   const experiences = [
+    // {
+    //   period: '2024 - Present',
+    //   role: 'Senior Full Stack Developer',
+    //   company: 'Tech Solutions Inc.',
+    //   location: 'Remote',
+    //   description: 'Leading the development of enterprise-level SaaS applications. Focus on performance optimization and scalable architecture.',
+    //   highlights: [
+    //     'Reduced load times by 40% through code splitting',
+    //     'Managed a team of 5 junior developers',
+    //     'Implemented CI/CD pipelines using GitHub Actions'
+    //   ]
+    // },
     {
-      period: '2024 - Present',
-      role: 'Senior Full Stack Developer',
-      company: 'Tech Solutions Inc.',
-      location: 'Remote',
-      description: 'Leading the development of enterprise-level SaaS applications. Focus on performance optimization and scalable architecture.',
+      period: '2025 - Present',
+      role: 'React.js Intern',
+      company: 'Talentrise Technokrate Pvt Ltd.',
+      location: 'Nagpur, MH',
+      description: 'Working on building dynamic and responsive web applications using React.js, focusing on component-based architecture and state management.Integrating RESTful APIs and optimizing performance for enhanced user experience.',
       highlights: [
-        'Reduced load times by 40% through code splitting',
-        'Managed a team of 5 junior developers',
-        'Implemented CI/CD pipelines using GitHub Actions'
+        'Developed reusable React components to streamline UI development',
+        'Collaborated with designers to implement responsive designs',
+        'Optimized application performance through code splitting and lazy loading'
       ]
     },
     {
-      period: '2022 - 2024',
-      role: 'Full Stack Developer',
-      company: 'Digital Innovations',
-      location: 'Balaghat, India',
-      description: 'Developed and maintained various client projects using the MERN stack.',
+      period: '2023 - 2025',
+      role: 'MERN Stack Development Trainee',
+      company: 'Sheryians',
+      location: 'Bhopal, MP',
+      description: 'Completed an intensive training program focused on full stack web development using the MERN stack.',
       highlights: [
-        'Built 10+ custom e-commerce solutions',
-        'Integrated multiple payment gateways (Stripe, Razorpay)',
-        'Optimized MongoDB queries for better data retrieval'
-      ]
-    },
-    {
-      period: '2020 - 2022',
-      role: 'Frontend Developer',
-      company: 'Creative Agency',
-      location: 'Hybrid',
-      description: 'Focused on creating pixel-perfect, responsive user interfaces for global brands.',
-      highlights: [
-        'Translated Figma designs into clean React code',
-        'Implemented complex animations using Framer Motion',
-        'Ensured 100% cross-browser compatibility'
+        'Developed responsive and user-friendly web applications',
+        'Collaborated on team projects using Agile methodologies',
+        'Gained hands-on experience with RESTful APIs and JWT authentication'
       ]
     }
   ];

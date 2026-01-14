@@ -3,6 +3,7 @@ import { ExternalLink, Github, Filter } from 'lucide-react';
 import RefokusThambnail from '../../assets/RefokusThambnail.png';
 import BeyondWhatUSee from '../../assets/beyondWhatUSee.png';
 import buyWix from '../../assets/buy-wix.png';
+import portfolio from '../../assets/portfolio.png';
 const Project = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
 
@@ -79,7 +80,8 @@ const Project = () => {
       technologies: ['React', "Lenis", 'tailwindcss', 'Framer Motion'],
       github: 'https://github.com/ayushbharne1/Refokus',
       demo: 'https://refokus-rho-flame.vercel.app'
-    },    {
+    }, 
+       {
       id: 8,
       title: 'Buy-Wix Landing Page',
       description: 'Animated landing page built with HTML, CSS, and JavaScript, showcasing modern design and interactive elements.',
@@ -88,6 +90,16 @@ const Project = () => {
       technologies: ['HTML', "CSS", 'JavaScript'],
       github: 'https://github.com/ayushbharne1/BuyWix-Website',
       demo: 'https://buy-wix-website.vercel.app/'
+    },
+       {
+      id: 9,
+      title: 'Portfolio Website',
+      description: 'Portfolio website built with React, Tailwind CSS, and EmailJS for contact form integration. Responsive design for various screen sizes. Showcases projects, skills, and experience effectively.',
+      image: portfolio,
+      category: 'Web App',
+      technologies: ['React', "Tailwind CSS", 'EmailJS'],
+      github: 'https://github.com/ayushbharne1/portfolio-website',
+      demo: 'https://portfolio-website-6ifvrj8ml-ayush-bharnes-projects.vercel.app/'
     },
   ];
 

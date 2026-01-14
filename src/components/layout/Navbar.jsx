@@ -35,8 +35,8 @@ const Navbar = () => {
           {/* Logo */}
           <div className="shrink-0">
             <a href="#home" className="flex items-center gap-2 group">
-              <div className="w-10 h-10 bg-linear-to-br from-[#ffa116] to-[#ffb800] rounded-lg flex items-center justify-center transform group-hover:scale-110 transition-transform">
-                <span className="text-[#0a0a0a] font-bold text-xl">AB</span>
+              <div className="hidden md:flex w-10 h-10 bg-linear-to-br from-[#ffa116] to-[#ffb800] rounded-lg  items-center justify-center transform group-hover:scale-110 transition-transform">
+                <span className=" text-[#0a0a0a] font-bold text-xl">AB</span>
               </div>
               <span className="text-white font-bold text-xl hidden sm:block">
                 Ayush Bharne
