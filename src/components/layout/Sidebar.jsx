@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Download, Linkedin, Github, Mail, Menu, X } from 'lucide-react'
+import { Download, Linkedin, Github, Mail, Menu, X, ExternalLink } from 'lucide-react'
 import profile from '../../assets/profileportfolio.png'
 
 const Sidebar = () => {
@@ -233,19 +233,20 @@ const Sidebar = () => {
             </div>
 
             {/* Resume */}
-            <button
-              className="
-                w-full py-2.5 md:py-3 px-4 mb-4
-                rounded font-semibold text-sm md:text-base
-                flex items-center justify-center gap-2
-                bg-amber-400 text-neutral-900
-                transition-all
-                hover:bg-amber-300 hover:-translate-y-0.5
-              "
-            >
-              Download Resume
-              <Download size={16} />
-            </button>
+<a
+  href="/resume/resumenew.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="w-full py-2.5 md:py-3 px-4 mb-4
+    rounded font-semibold text-sm md:text-base
+    flex items-center justify-center gap-2
+    bg-amber-400 text-neutral-900
+    transition-all
+    hover:bg-amber-300 hover:-translate-y-0.5"
+>
+  View Resume
+  <ExternalLink size={16} />
+</a>
 
           </div>
           
