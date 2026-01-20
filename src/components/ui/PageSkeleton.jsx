@@ -2,7 +2,7 @@ import React from 'react'
 
 const PageSkeleton = () => {
   return (
-    <div className="min-h-screen p-6 bg-neutral-950 animate-pulse">
+    <div className="min-h-screen p-6 bg-neutral-850 animate-pulse">
       {/* Title */}
       <div className="h-8 w-56 bg-neutral-800 rounded mb-8" />
 
