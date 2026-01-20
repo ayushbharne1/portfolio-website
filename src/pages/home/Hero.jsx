@@ -52,7 +52,7 @@ const Hero = () => {
   }, [letterIndex, isTyping, currentIndex]);
 
   return (
-    <div className="relative bg-[#0a0a0a] overflow-hidden min-h-[50vh] md:min-h-[60vh] lg:min-h-[60vh] flex items-center py-12 md:py-16 lg:py-20">
+    <div className="relative bg-[#0a0a0a] overflow-hidden min-h-[45vh] md:min-h-[60vh] lg:min-h-[55vh] flex items-center py-12 md:py-16 lg:py-20">
       {/* Gradient Background Effects */}
       <div className="absolute top-0 right-0 w-64 h-64 md:w-96 md:h-96 lg:w-125 lg:h-125 bg-blue-500/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-64 h-64 md:w-96 md:h-96 lg:w-125 lg:h-125 bg-purple-500/10 rounded-full blur-3xl"></div>
